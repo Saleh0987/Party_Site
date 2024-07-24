@@ -1,0 +1,238 @@
+/* Global */
+:root {
+ --primary-color: deeppink;
+ --secondary-color: #748182;
+ --tertiary-color: #1c1c1c;
+ --main-font: "Montserrat", sans-serif;
+ --secondary-font: "Poppins", sans-serif;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: "Poppins", sans-serif;
+ overflow: hidden;
+}
+
+h1,
+h2 {
+ font-family: "Cookie", cursive;
+}
+
+.main-color {
+ color: var(--primary-color);
+}
+
+.bg-main-color {
+ background-color: var(--primary-color);
+}
+/* End Global */
+
+/* ScrollBar */
+
+/* width */
+::-webkit-scrollbar {
+ width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 5px grey;
+ border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: var(--primary-color);
+ border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: rgb(176, 8, 98);
+}
+/* End ScrollBar */
+
+
+/* Loading */
+.loading {
+ display: flex;
+ position: fixed;
+ inset: 0;
+ z-index: 6;
+}
+
+/* End Loading */
+
+/* SideNav */
+.side-nav {
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ display: flex;
+ z-index: 2;
+ transition: all 300ms ease;
+}
+
+.side-nav i#menu {
+ align-self: center;
+ padding: 10px;
+ border-radius: 0px 6px 6px 0px;
+ color: white;
+ background-color: var(--primary-color);
+ cursor: pointer;
+ transition: all 300ms ease;
+}
+
+.side-nav i#menu:hover {
+ color: var(--primary-color);
+ background-color: white;
+}
+
+.side-nav .side-nav-inner {
+ display: flex;
+ flex-direction: column;
+}
+
+.side-nav .side-nav-inner .close {
+  cursor: pointer;
+ color: inherit;
+ background-color: transparent;
+ transition: all 300ms ease;
+}
+
+.side-nav .side-nav-inner .close:hover {
+ color: var(--primary-color);
+ background-color: rgba(52, 58, 64, 0.1);
+}
+
+.side-nav .side-nav-inner .profile i {
+ width: 4rem;
+ height: 4rem;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.side-nav .side-nav-inner ul li a {
+ color: inherit;
+ transition: all 300ms ease;
+}
+
+.side-nav .side-nav-inner ul li:hover a {
+ color: var(--primary-color);
+}
+
+.side-nav .side-nav-inner ul li {
+ padding: 0 3.5rem 0 1rem;
+ background-color: transparent;
+ transition: all 300ms ease;
+}
+
+.side-nav .side-nav-inner ul li:hover {
+ padding: 0 3rem 0 1.5rem;
+ background-color: rgba(52, 58, 64, 0.1);
+}
+
+#theme{
+  cursor: pointer;
+}
+
+/* End SideNav */
+
+/* Home */
+#home .background-img {
+ background-image: linear-gradient(rgba(255, 0, 150, 0.5),
+   rgba(255, 0, 150, 0.5)),
+  url('../img/party.jpg');
+ width: 100%;
+ height: 100vh;
+ background-size: cover;
+ background-position: bottom;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+}
+/* End Home */
+
+/* Details */
+.bg-img {
+ background-image: linear-gradient(rgba(255, 0, 150, 0.5),
+   rgba(255, 0, 150, 0.5)),
+  url('../img/joinUs.jpg');
+ width: 100%;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ position: relative;
+ top: 0;
+ left: 0;
+}
+
+.singers .col-9 h3{
+  cursor: pointer;
+}
+
+.singers .col-9 p{
+  padding: 10px;
+  text-align: center;
+}
+/* End Details */
+
+
+/* Contact */
+#contact .social-icons i {
+ width: 2.5rem;
+ height: 2.5rem;
+ color: var(--primary-color);
+ background-color: transparent;
+ border: var(--primary-color) 1px solid;
+ cursor: pointer;
+ display: inline-flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ transition: all 300ms ease;
+}
+
+#contact .social-icons i:hover {
+ color: white;
+ background-color: var(--primary-color);
+ border: transparent 1px solid;
+}
+
+#contact form input,
+textarea.form-control {
+ border: 1px solid var(--primary-color);
+}
+
+.form-control:focus {
+ border-color: var(--primary-color);
+ box-shadow: 0 0 0 0.25rem rgba(255, 20, 147, 0.25);
+}
+
+.btn-outline-main {
+ --bs-btn-color: var(--primary-color);
+ --bs-btn-border-color: var(--primary-color);
+ --bs-btn-hover-color: #fff;
+ --bs-btn-hover-bg: var(--primary-color);
+ --bs-btn-hover-border-color: var(--primary-color);
+ --bs-btn-focus-shadow-rgb: 220, 53, 69;
+ --bs-btn-active-color: #fff;
+ --bs-btn-active-bg: var(--primary-color);
+ --bs-btn-active-border-color: var(--primary-color);
+ --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+ --bs-btn-disabled-color: var(--primary-color);
+ --bs-btn-disabled-bg: transparent;
+ --bs-btn-disabled-border-color: var(--primary-color);
+ --bs-gradient: none;
+}
+/* End Contact */
